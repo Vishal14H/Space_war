@@ -405,7 +405,7 @@ PrefabInstance:
     - target: {fileID: 7576798124163360800, guid: a95077401f8fa4f459489ad861ca835d, type: 3}
       propertyPath: waveConfig
       value: 
-      objectReference: {fileID: 11400000, guid: 9ea555afa0cc7ca4e9adb976f81b49ba, type: 2}
+      objectReference: {fileID: 11400000, guid: f5ab6ba29b53f884ba1e12c81d774e9a, type: 2}
     - target: {fileID: 7576798124163360800, guid: a95077401f8fa4f459489ad861ca835d, type: 3}
       propertyPath: wayPoints.Array.data[0]
       value: 
