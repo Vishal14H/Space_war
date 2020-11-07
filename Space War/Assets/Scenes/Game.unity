@@ -158,6 +158,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e06ab56fa932bff4ca9d117e2db1dd82, type: 2}
   - {fileID: 11400000, guid: 114782ef53534044288182dada9860a0, type: 2}
   startingWave: 0
+  looping: 1
 --- !u!4 &157221290
 Transform:
   m_ObjectHideFlags: 0
@@ -237,11 +238,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8347748355788793358, guid: 7d340612c77b69040af2896e3b673548, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.03
+      value: 6.09
       objectReference: {fileID: 0}
     - target: {fileID: 8347748355788793358, guid: 7d340612c77b69040af2896e3b673548, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.53
+      value: 2.78
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d340612c77b69040af2896e3b673548, type: 3}
