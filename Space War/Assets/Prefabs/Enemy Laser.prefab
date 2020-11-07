@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4738001696627860382}
   - component: {fileID: 2089618910132139098}
   - component: {fileID: 4560508926929246413}
+  - component: {fileID: 5819395037771326768}
   m_Layer: 0
   m_Name: Enemy Laser
   m_TagString: Untagged
@@ -29,7 +30,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 5789464595938918692}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -106,7 +108,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1251243221867811364}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -119,3 +121,139 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!70 &5819395037771326768
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251243221867811364}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.12857144, y: 0.7714286}
+  m_Direction: 0
+--- !u!60 &2855562829108777115
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2899302400219479017}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.47435898, y: 0.47435898}
+    newSize: {x: 0.37, y: 0.37}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.228336, y: -0.20561484}
+      - {x: 0.19582608, y: -0.2268103}
+      - {x: 0.23286381, y: -0.1946584}
+      - {x: 0.2393777, y: -0.11000165}
+      - {x: 0.16948006, y: -0.032775603}
+      - {x: 0.16141167, y: 0.047035992}
+      - {x: 0.23999652, y: 0.11747596}
+      - {x: 0.24029323, y: 0.20094074}
+      - {x: 0.20328769, y: 0.24239358}
+      - {x: 0.09639001, y: 0.23584628}
+      - {x: 0.03529954, y: 0.16141745}
+      - {x: -0.037662387, y: 0.16729519}
+      - {x: -0.09811054, y: 0.2407238}
+      - {x: -0.19025245, y: 0.23196533}
+      - {x: -0.22502054, y: 0.20334028}
+      - {x: -0.22457616, y: 0.1184444}
+      - {x: -0.14964812, y: 0.027659744}
+      - {x: -0.15839285, y: -0.036252983}
+      - {x: -0.23196538, y: -0.12268373}
+      - {x: -0.2037173, y: -0.21110895}
+      - {x: -0.1368519, y: -0.22668645}
+      - {x: -0.08262375, y: -0.20935518}
+      - {x: -0.019030392, y: -0.15736324}
+      - {x: 0.051053137, y: -0.15939188}
+      - {x: 0.12386492, y: -0.23457241}
+      - {x: 0.19724163, y: -0.22288975}
+      - {x: 0.22815308, y: -0.20562714}
+      - {x: 0.23717949, y: -0.23717949}
+--- !u!1001 &201608276461845003
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 398075731237543624}
+    m_Modifications:
+    - target: {fileID: 3094014189577798114, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_Name
+      value: Enemy Laser 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.3703489
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.06575024
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+--- !u!1 &2899302400219479017 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3094014189577798114, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+  m_PrefabInstance: {fileID: 201608276461845003}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5789464595938918692 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5950397262217263919, guid: 556a6bd07b5bdfd439ee20b2daba055c, type: 3}
+  m_PrefabInstance: {fileID: 201608276461845003}
+  m_PrefabAsset: {fileID: 0}
