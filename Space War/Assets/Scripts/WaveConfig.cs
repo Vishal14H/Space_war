@@ -26,5 +26,5 @@ public class WaveConfig : ScriptableObject
     public float GetTimeBetweenSpawns() { return timeBetweenSpawns; }
     public float GetSpawnRandomFactor() { return spawnRandomFactor; }
     public int GetNumberOfEnemies() { return numberOfEnemies; }
-    public float GetmoveSpeed() { return moveSpeed; }
+    public float GetMoveSpeed() { return moveSpeed; }
 }
