@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5296086948513336613}
   - component: {fileID: 5296086948513336615}
   - component: {fileID: 3060377259333646191}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ MonoBehaviour:
   health: 500
   laserPrefab: {fileID: 5313592865569845413, guid: 7f04dee8f52ae404397287b840144793, type: 3}
   projectileSpeed: 20
-  projectileFireSpeed: 0.03
+  projectileFireSpeed: 0.06
 --- !u!60 &3060377259333646191
 PolygonCollider2D:
   m_ObjectHideFlags: 0
