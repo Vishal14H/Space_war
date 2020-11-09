@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    [Header("Enemy")]
     [SerializeField] float health = 100;
     [SerializeField] float shotCounter;
     [SerializeField] float minTimeBetweenShots = 0.2f;
     [SerializeField] float maxTimeBetweenShots = 3f;
+    [Header("Enemy Projectile")]
     [SerializeField] GameObject projectile;
     [SerializeField] float projectileSpeed = 10f;
+    [Header("Enemy VFX")]
     [SerializeField] GameObject deathVFX;
     [SerializeField] float durationForExplosion = 1f;
+    [Header("Enemy SFX")]
     [SerializeField] AudioClip deathSFX;
     [SerializeField] [Range(0,1)] float deathSFXVolume = 0.7f;
+    [SerializeField] AudioClip shootSFX;
+    [SerializeField] [Range(0, 1)] float shootSFXVolume = 0.3f;
 
     void Start()
     {
@@ -40,6 +46,7 @@ public class Enemy : MonoBehaviour
     {
         GameObject laser = Instantiate(projectile, transform.position, Quaternion.identity) as GameObject;
         laser.GetComponent<Rigidbody2D>().velocity = new Vector2(0, -projectileSpeed);
+        AudioSource.PlayClipAtPoint(shootSFX, Camera.main.transform.position, shootSFXVolume);
     }
 
 

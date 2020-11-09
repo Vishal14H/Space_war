@@ -17,9 +17,10 @@ public class Player : MonoBehaviour
     [SerializeField] GameObject laserPrefab;
     [SerializeField] float projectileSpeed = 15f;
     [SerializeField] float projectileFireSpeed = 0.8f;
+    [Header("Player SFX")]
     [SerializeField] AudioClip deathSFX;
-    [SerializeField] AudioClip shootSFX;
     [SerializeField] [Range(0, 1)] float deathSFXVolume = 0.7f;
+    [SerializeField] AudioClip shootSFX;
     [SerializeField] [Range(0, 1)] float shootSFXVolume = 0.3f;
 
     Coroutine firingCoroutine;
